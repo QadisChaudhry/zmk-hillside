@@ -29,8 +29,11 @@
 #define SS2 LS(LG(N5))
 #define Monitors LS(LG(LA(LC(F))))
 
+#define Copy LG(C)
+#define Paste LG(V)
+
 &lt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <105>;
 };
 &sk {
     release-after-ms = <200>;
@@ -70,20 +73,22 @@
 
                 colemak {
                         bindings = <
-    &kp TAB         &kp Q        &kp W       &kp F       &kp P        &kp B                  &kp J &kp L        &kp U           &kp Y         &kp SEMI        &kp EQUAL
-    &lt SYMBOLS ESC &kp A        &kp R       &kp S       &kp T        &kp G                  &kp M &kp N        &kp E           &kp I         &kp O           &kp SQT
-    &cs             &hrm LCTRL Z &hrm LALT X &hrm LGUI C &hrm LSHFT D &kp V &trans    &trans &kp K &hrm LSHFT H &hrm LGUI COMMA &hrm LALT DOT &hrm LCTRL FSLH &cs
-                                      &trans &kp GRAVE &mo NUMBERS &kp BSPC &trans    &trans &kp SPACE &lt NAVIGATION RET &kp DEL &trans
+    &kp TAB         &kp Q        &kp W       &kp F       &kp P        &kp B                       &kp J     &kp L              &kp U           &kp Y         &kp SEMI        &kp EQUAL
+    &lt SYMBOLS ESC &kp A        &kp R       &kp S       &kp T        &kp G                       &kp M     &kp N              &kp E           &kp I         &kp O           &kp SQT
+    &cs             &hrm LCTRL Z &hrm LALT X &hrm LGUI C &hrm LSHFT D &kp V &kp Paste    &kp UP   &kp K     &hrm LSHFT H       &hrm LGUI COMMA &hrm LALT DOT &hrm LCTRL FSLH &cs
+                                      &trans &kp GRAVE &mo NUMBERS &kp BSPC &kp Copy     &kp DOWN &kp SPACE &lt NAVIGATION RET &kp DEL &trans
                         >;
+                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 qwerty {
                         bindings = <
-   &kp TAB         &kp Q        &kp W       &kp E       &kp R        &kp T                   &kp Y &kp U        &kp I           &kp O         &kp P           &kp EQUAL
-   &lt SYMBOLS ESC &kp A        &kp S       &kp D       &kp F        &kp G                   &kp H &kp J        &kp K           &kp L         &kp SEMI        &kp SQT
-   &cs             &hrm LCTRL Z &hrm LALT X &hrm LGUI C &hrm LSHFT V &kp B &trans     &trans &kp N &hrm LSHFT M &hrm LGUI COMMA &hrm LALT DOT &hrm LCTRL FSLH &cs
-                                     &trans &kp GRAVE &mo NUMBERS &kp BSPC &trans     &trans &kp SPACE &lt NAVIGATION RET &kp DEL &trans
+   &kp TAB         &kp Q        &kp W       &kp E       &kp R        &kp T                       &kp Y &kp U        &kp I           &kp O         &kp P           &kp EQUAL
+   &lt SYMBOLS ESC &kp A        &kp S       &kp D       &kp F        &kp G                       &kp H &kp J        &kp K           &kp L         &kp SEMI        &kp SQT
+   &cs             &hrm LCTRL Z &hrm LALT X &hrm LGUI C &hrm LSHFT V &kp B &kp Paste    &kp UP   &kp N &hrm LSHFT M &hrm LGUI COMMA &hrm LALT DOT &hrm LCTRL FSLH &cs
+                                     &trans &kp GRAVE &mo NUMBERS &kp BSPC &kp Copy     &kp DOWN &kp SPACE &lt NAVIGATION RET &kp DEL &trans
                         >;
+                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 numbers {
