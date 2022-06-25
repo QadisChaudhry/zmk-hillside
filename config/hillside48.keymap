@@ -75,8 +75,8 @@
                         bindings = <
     &kp TAB         &kp Q        &kp W       &kp F       &kp P        &kp B                       &kp J     &kp L              &kp U           &kp Y         &kp SEMI        &kp EQUAL
     &lt SYMBOLS ESC &kp A        &kp R       &kp S       &kp T        &kp G                       &kp M     &kp N              &kp E           &kp I         &kp O           &kp SQT
-    &cs             &hrm LCTRL Z &hrm LALT X &hrm LGUI C &hrm LSHFT D &kp V &kp Paste    &kp UP   &kp K     &hrm LSHFT H       &hrm LGUI COMMA &hrm LALT DOT &hrm LCTRL FSLH &cs
-                                      &trans &kp GRAVE &mo NUMBERS &kp BSPC &kp Copy     &kp DOWN &kp SPACE &lt NAVIGATION RET &kp DEL &trans
+    &cs             &hrm LCTRL Z &hrm LALT X &hrm LGUI C &hrm LSHFT D &kp V &kp Copy     &kp UP   &kp K     &hrm LSHFT H       &hrm LGUI COMMA &hrm LALT DOT &hrm LCTRL FSLH &cs
+                                      &trans &kp GRAVE &mo NUMBERS &kp BSPC &kp Paste    &kp DOWN &kp SPACE &lt NAVIGATION RET &kp DEL &trans
                         >;
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
