@@ -33,10 +33,10 @@
 #define Paste LG(V)
 
 &left_encoder {
-    resolution = <2>;
+    resolution = <3>;
 };
 &right_encoder {
-    resolution = <2>;
+    resolution = <3>;
 };
 
 &lt {
